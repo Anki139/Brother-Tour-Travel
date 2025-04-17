@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Drivers - Brother Tour & Travels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative; /* Add this line */
+    }
+    .header-icon {
+  position: absolute;
+  top: 10px;
+  width: 180px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* 👇 Adds corner fading */
+-webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.left-icon {
+  left: 20px;
+}
+
+.right-icon {
+  right: 20px;
+}
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6347;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .driver-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .driver-card {
+        border:2px solid rgb(16, 16, 76);
+      background: rgb(50, 162, 210);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .driver-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    .driver-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #0066cc;
+    }
+    .driver-card h3 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+      color: #333;
+    }
+    .driver-card p {
+      margin: 4px 0;
+      font-size: 16px;
+      color: #e4e5e6;
+    }
+    .phone {
+      color: green;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <img src="images/dhari_devi.jpeg" alt="Left Icon" class="header-icon left-icon" />
+  
+  <h1>Brother Tour & Travels</h1>
+  <img src="images/chandrabadni.jpeg" alt="Right Icon" class="header-icon right-icon" />
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="routes.html">Routes</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Meet Our Drivers</h2>
+
+  <div class="driver-grid">
+
+    <div class="driver-card">
+      <img src="images/driver1.jpg" alt="Driver 1">
+      <h3>Kushal Bisht</h3>
+      <p>Drives: Bolero</p>
+      <p class="phone">📞 +91 98765 43210</p>
+    </div>
+
+    <div class="driver-card">
+      <img src="images/driver2.jpg" alt="Driver 2">
+      <h3>Ashish Chauhan</h3>
+      <p>Drives: Ertiga</p>
+      <p class="phone">📞 +91 98765 12345</p>
+    </div>
+
+    <div class="driver-card">
+      <img src="images/driver3.jpg" alt="Driver 3">
+      <h3>Viajy Panwar</h3>
+      <p>Drives: Swift</p>
+      <p class="phone">📞 +91 91234 56789</p>
+    </div>
+
+    <div class="driver-card">
+      <img src="images/driver4.jpg" alt="Driver 4">
+      <h3>Gaurav Musan</h3>
+      <p>Drives: Max Jeep</p>
+      <p class="phone">📞 +91 90123 45678</p>
+    </div>
+
+    <div class="driver-card">
+      <img src="images/driver5.jpg" alt="Driver 5">
+      <h3>Shudhanshu Raturi</h3>
+      <p>Drives: Alto</p>
+      <p class="phone">📞 +91 99887 66554</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Brother Tour & Travels | Designed with ❤️ in Hindolakhal
+</footer>
+
+</body>
+</html>

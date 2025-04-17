@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Brother Tour & Travels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f9ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .header-icon {
+  position: absolute;
+  top: 10px;
+  width: 180px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* 👇 Adds corner fading */
+-webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.left-icon {
+  left: 20px;
+}
+
+.right-icon {
+  right: 20px;
+}
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    nav a {
+      margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6347;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgb(255, 228, 250);
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .gallery-item {
+      background: rgb(18, 18, 19);
+  
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-item img {
+     
+      object-fit: cover;
+      transition: opacity 0.3s;
+    }
+    .gallery-item img:hover {
+      opacity: 0.8;
+    }.gallery-item {
+  overflow: hidden; /* prevents image overflow */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.gallery-item img {
+ 
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* subtle zoom */
+}
+.gallery-item img {
+  width: 100%;
+  height: 180px; /* reduced from 300px */
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+    .gallery-item p {
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      color: #f80a0ac8;
+      background-color: #f9f9f9;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <img src="images/dhari_devi.jpeg" alt="Left Icon" class="header-icon left-icon" />
+  
+    <h1>Brother Tour & Travels</h1>
+    <img src="images/chandrabadni.jpeg" alt="Right Icon" class="header-icon right-icon" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="routes.html">Routes</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="images/bolero.jpg" alt="Bolero">
+      <p>Bolero - Comfortable for a Family of 6</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/ertiga.jpg" alt="Ertiga">
+      <p>Ertiga - Ideal for Long Distance Travel</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/swift.jpg" alt="Swift">
+      <p>Swift - A Budget-Friendly Option for Small Groups</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/max.jpg" alt="Max Jeep">
+      <p>Max Jeep - Best for Rough Roads</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/alto.jpg" alt="Alto">
+      <p>Alto - Small and Efficient for Quick Trips</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/route_hindolakhal_dehradun.jpg" alt="Hindolakhal to Dehradun Route">
+      <p>Scenic Route from Hindolakhal to Dehradun</p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/route_dehradun_delhi.jpg" alt="Dehradun to Delhi Route">
+      <p>Beautiful Route from Dehradun to Delhi</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Brother Tour & Travels | Designed with ❤️ in Hindolakhal
+</footer>
+
+</body>
+</html>

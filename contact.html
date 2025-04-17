@@ -1,0 +1,126 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Brother Tour & Travels</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f0fe;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+        background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .header-icon {
+  position: absolute;
+  top: 10px;
+  width: 180px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* 👇 Adds corner fading */
+-webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.left-icon {
+  left: 20px;
+}
+
+.right-icon {
+  right: 20px;
+}
+
+    nav a {
+        margin: 0 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .container {
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      margin-top: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .contact-info {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .whatsapp-btn:hover {
+      background-color: #20b954;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <img src="images/dhari_devi.jpeg" alt="Left Icon" class="header-icon left-icon" />
+  
+  <h1>Brother Tour & Travels</h1>
+  <img src="images/chandrabadni.jpeg" alt="Right Icon" class="header-icon right-icon" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="routes.html">Routes</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Contact & Booking Help</h2>
+  <div class="contact-info">
+    <p><strong>Owner Name:</strong> Mr. Bijendra Bisht</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> brotours@gmail.com</p>
+    <p><strong>Village:</strong> Hindolakhal, Tehri Garhwal</p>
+
+    <a class="whatsapp-btn" href="https://wa.me/919876543210" target="_blank">
+      📲 Book via WhatsApp
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

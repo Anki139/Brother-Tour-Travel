@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Vehicles - Brother Tour & Travels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(135deg, #0066cc, #003366);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .header-icon {
+  position: absolute;
+  top: 10px;
+  width: 180px;
+  height: 130px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* 👇 Adds corner fading */
+-webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+.left-icon {
+  left: 20px;
+}
+
+.right-icon {
+  right: 20px;
+}
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6347;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .vehicle-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .vehicle-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .vehicle-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+    .vehicle-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #eee;
+    }
+    .vehicle-card h3 {
+      margin: 15px 0;
+      font-size: 22px;
+      color: #333;
+    }
+    .vehicle-card p {
+      font-size: 16px;
+      padding: 0 15px 20px;
+      color: #666;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+    <img src="images/dhari_devi.jpeg" alt="Left Icon" class="header-icon left-icon" />
+  
+    <h1>Brother Tour & Travels</h1>
+    <img src="images/chandrabadni.jpeg" alt="Right Icon" class="header-icon right-icon" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="routes.html">Routes</a>
+    <a href="vehicles.html">Vehicles</a>
+    <a href="drivers.html">Drivers</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Our Vehicles</h2>
+
+  <div class="vehicle-grid">
+
+    <div class="vehicle-card">
+      <img src="images/bolero.jpg" alt="Bolero">
+      <h3>Mahindra Bolero</h3>
+      <p>Spacious and strong. Ideal for hills. <br>Seats: 7</p>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="images/ertiga.jpg" alt="Ertiga">
+      <h3>Maruti Ertiga</h3>
+      <p>Comfortable for family trips. <br>Seats: 7</p>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="images/swift.jpg" alt="Swift">
+      <h3>Maruti Swift</h3>
+      <p>Perfect for quick travel. <br>Seats: 4</p>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="images/max.jpg" alt="Max">
+      <h3>Max (Jeep)</h3>
+      <p>Powerful and rural-friendly. <br>Seats: 10</p>
+    </div>
+
+    <div class="vehicle-card">
+      <img src="images/alto.jpg" alt="Alto">
+      <h3>Maruti Alto</h3>
+      <p>Simple and efficient. <br>Seats: 4</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Brother Tour & Travels | Designed with ❤️ in Hindolakhal
+</footer>
+
+</body>
+</html>
